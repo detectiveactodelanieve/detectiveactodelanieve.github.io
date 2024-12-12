@@ -1,4 +1,11 @@
-*,*::after,*::before{
+@font-face{
+    font-family:'mifuente';
+    src: url('/assent/FONTS/TypoSlab\ Irregular\ Demo.otf')format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -20,20 +27,28 @@ body{
     border-radius: 100px;
 }
 
+
 header{
-    position: fixed; /* Fija el header en la parte superior */
-    top: 0; /* Alinea el header con el borde superior */
-    width: 100%; /* Ocupa todo el ancho de la pantalla */
-    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    position: fixed;
+    top: 0;
+    width: 100%; 
+    z-index: 1000; 
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #333;
-    font-size: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Agrega una sombra para distinguirlo */
-    padding: 10px 20px; /* Espaciado interno */
-  
-   
+    background-color:white;
+    font-size: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    padding: 10px 30px; 
+    color: #221efc;
+}
+
+.logo{
+    
+    max-width: 15%;
+    padding: 2px;
+    margin-left: 50px;
+    border-bottom: solid 4px #80cc28;
 }
 
 .navbar{
@@ -47,27 +62,36 @@ main{
     gap: 80px;
 }
 .carousel{
-    margin-top: 10PX;
+    margin-top: 5PX;
     margin-inline: 100PX;
     
     img{
-    border-radius: 50px;
-    }
+    border-radius: 25px;}
 }
 
-.logo{
-    max-width: 5rem;
-}
+
 .nav-list{
     display: flex;
     list-style-type: none;
     gap: 1rem;
 
-    li a{
-        text-decoration: none;
-        color: #f9a826;
-        transition: 0.7s;
-        border-radius: 5px;
+    li{
+        transition: all 0.5s;
+       
+        a{
+            text-decoration: none;
+            color: #221efc;
+            transition: 0.7s;
+            border-radius: 7px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            
+        }
+        a:hover{
+            color:#80cc28;
+        }
+    }
+    li:hover{
+        scale: 1.2;
     }
     
 }
@@ -104,10 +128,7 @@ h2{
     padding-top: 10%;
     margin-bottom: 60px;
 }
-.info{
-    font-size: 18px;
-    color: #f9a826;
-}
+
 
 .container h2 ::after{
     content: '';
@@ -143,8 +164,11 @@ h2{
     }
 }
 .container .flex-section .Servicios:hover{
-    transform: scale(1.1);
+ 
     background: #d3d2d2;
+    a{
+        transition: 0.5s;
+    }
 }
 
 body {
@@ -222,13 +246,15 @@ body {
     display: flex;
 }
 
-.nav-list li a:hover{
-    transform: scale(1.1);
-    background: #646464;
-}
 
 .v-mision , .v {
-    border-bottom: solid 4px #f9a826;
+    /*border-bottom: solid 4px #f9a826;*/
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    color: #464444;
+    i{
+        color: #16557b;
+    }
 }
 .serv{
     border-bottom: solid 4px #f9a826;
