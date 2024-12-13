@@ -20,13 +20,6 @@ body{
     
 }
 
-#text-carrusel{
-    background-color: #4b4b4b9d;
-    color: white;
-    font-weight: bold;
-    border-radius: 100px;
-}
-
 
 header{
     position: fixed;
@@ -40,7 +33,7 @@ header{
     font-size: 15px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
     padding: 10px 30px; 
-    color: #221efc;
+    color: #162882;
 }
 
 .logo{
@@ -49,10 +42,6 @@ header{
     padding: 2px;
     margin-left: 50px;
     border-bottom: solid 4px #80cc28;
-}
-
-.navbar{
-    background-color: #ada5a5;
 }
 
 main{
@@ -80,7 +69,7 @@ main{
        
         a{
             text-decoration: none;
-            color: #221efc;
+            color: #162882;
             transition: 0.7s;
             border-radius: 7px;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -102,18 +91,63 @@ main{
 
 h2{
     text-align: center;
+    font-size: 20px;
 }
 
 .mis-vis{
     display: flex   ;
     margin-inline: 12%;
     gap: 0 80px;
+    font-size: 20px;
+
 
     .Mision, .Vision{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
+    h2{
+        font-size: 35px;
+
+    }
+}
+.mis-vis section {
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
+  }
+  
+  .mis-vis section:hover {
+    background-color: #162882;
+    color: white;
+   
+  }
+  
+  .mis-vis section:hover h2 {
+    color: #ffffff; 
+    transition: color 0.3s ease; 
+  }
+  .mis-vis section:hover h2 i {
+    color: #ffffff; /* Cambia a blanco (o el color que prefieras) */
+    transition: color 0.3s ease; /* Transición suave para el cambio de color */
+  }
+  
+  
+
+.logro {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh; 
+  margin: 0; 
+  margin-top: 55px;
+  
+
+  img{
+    max-width: 100%; 
+   height: auto; 
+  }
+    
 }
 
 .container{
@@ -127,6 +161,19 @@ h2{
     text-align: center;
     padding-top: 10%;
     margin-bottom: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+    color: #162882;
+}
+.serv{
+    border-bottom: solid 3px #80cc28 ;
+    width: 50%; 
+    margin-top: 5px; 
+    margin-bottom: 10px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    
+
 }
 
 
@@ -137,7 +184,7 @@ h2{
     bottom: -5px;
     width: 100px;
     height: 5px;
-    background: black;
+    background: #162882;
 }
 
 .container .flex-section {
@@ -147,39 +194,47 @@ h2{
 }
 
 
-.container .flex-section .Servicios{
+.container .flex-section .Servicios {
     display: flex;
     flex-direction: column;
     padding: 25px;
     text-align: center;
     border-radius: 5px;
-    transition: transform .5s;
+    transition: transform 0.5s, background 0.5s, color 0.5s;
     cursor: pointer;
     font-size: 15px;
     gap: 10px;
+    color: #162882;
+    background-color: #eaeaea;
+    margin-bottom: 150px;
+    margin-top: 10px;
 
-    svg{
+    svg {
         height: 7vh;
         width: auto;
     }
 }
-.container .flex-section .Servicios:hover{
- 
-    background: #d3d2d2;
-    a{
-        transition: 0.5s;
-    }
+
+.container .flex-section .Servicios:hover {
+    background: #162882;
+    color: #eaeaea;
+    transform: scale(1.05); 
 }
 
-body {
+.container .flex-section .Servicios:hover a {
+    transition: 0.5s; 
+}
+
+
+/*body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f9f9f9;
-}
+}*/
 
 
 .footer {
-    background-color: #333;
+    background-color: #162882;
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -207,7 +262,7 @@ body {
 .footer-section h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    color: #f9a826;
+    color: white;
 }
 
 .footer-section ul {
@@ -226,7 +281,7 @@ body {
 }
 
 .footer-section ul li a:hover {
-    color: #f9a826;
+    color: #80cc28;
 }
 
 
@@ -253,12 +308,10 @@ body {
     font-size: 30px;
     color: #464444;
     i{
-        color: #16557b;
+        color: #162882;
     }
 }
-.serv{
-    border-bottom: solid 4px #f9a826;
-}
+
 
 @media (max-width: 768px) {
     .footer-container {
@@ -296,7 +349,7 @@ body {
         top: 0;
         right: 0;
         bottom: 0;
-        background-color:rgb(219, 219, 219);
+        background-color: #555;
         padding: 2rem;
         box-shadow: 0 0 0 100vmax rgb(0 0 0 .5);
         z-index: 1;
