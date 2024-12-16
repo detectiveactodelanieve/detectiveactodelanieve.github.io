@@ -4,6 +4,12 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face{
+    font-family: 'mifuente-2';
+    src:url('/assent/FONTS/Milanello\ -\ Free\ Personal.otf')format('truetypr');
+    font-weight: normal;
+    font-style: normal;
+}
 
 *{
     margin: 0;
@@ -52,10 +58,7 @@ main{
 }
 .carousel{
     margin-top: 5PX;
-    margin-inline: 100PX;
-    
-    img{
-    border-radius: 25px;}
+    width: 100%;
 }
 
 
@@ -114,12 +117,12 @@ h2{
 }
 .mis-vis section {
     transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
+    padding: 4%;
   }
   
   .mis-vis section:hover {
     background-color: #162882;
     color: white;
-   
   }
   
   .mis-vis section:hover h2 {
@@ -142,10 +145,11 @@ h2{
   margin: 0; 
   margin-top: 55px;
   
-
+  
   img{
-    max-width: 100%; 
-   height: auto; 
+      max-width: 100%; 
+      height: auto;
+      
   }
     
 }
@@ -296,6 +300,7 @@ h2{
     padding-top: 10px;
     font-size: 0.9rem;
     color: #ccc;
+    font-family: 'mifeunte-2';
 }
 .flex-section{
     display: flex;
